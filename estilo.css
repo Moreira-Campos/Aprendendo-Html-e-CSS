@@ -1,0 +1,305 @@
+html {
+    scroll-behavior: smooth; /*Regula a Velocidade na subida e descida da página*/
+ }  
+body {
+   font-family: 'Indie Flower', cursiva;
+   background-image: url(../img/fundo\ digital.jpg) ; /*a imagem cobre todo body*/
+}
+
+.container {
+    background-color: peru; /*usei essa cor para destacar todo container*/
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 5%;
+    position: relative;
+    margin-bottom: 0;
+}
+ #sobre{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 auto;
+ }
+
+ #sobre .sobre {
+    text-align: center;
+ }
+
+ #galeria{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin: 0 auto;
+    
+ }
+
+ #galeria .galeria {
+    text-align: center;
+    
+ }
+
+ .imggaleria{ 
+    width: 95%;
+    border-radius: 50px;
+    box-shadow: 10px 10px gray;
+    
+ }
+
+ .imgsobre {
+    width: 30%;
+    height: 20%;
+}
+
+header, footer {
+    background-color: rgb(218,233,13); /*usei essa cor para destacar todo header e footer*/
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.1em;
+    line-height: 1.0;
+    padding: 1%;
+}
+.menu-opcoes{
+    text-align: center;  
+}
+.fixo {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    padding-bottom: 1%;
+    z-index: 1030; /*z-index vai fixar o header na posição*/
+}
+
+.ajustes {
+    line-height: 1;   
+    background-color: #696262;
+    text-align: justify;
+    padding: 10px 10px;
+    text-decoration: none;
+    align-items: 100px;
+    margin-top: 0;
+    margin-bottom: 25px;   
+    
+}    
+
+.ajustes li:hover {
+    background-color: #a3a3b3;
+    
+}
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+h3 {
+    font-size: 1.2em;
+    text-decoration: underline; 
+    
+
+}
+.titulos {
+    text-align: center;
+    color: black;
+    font-weight: bolder;
+    line-height: 1;
+}
+p {
+    color: #fff;
+    font-weight: bolder;
+    font-size: 1.0em;
+    text-align: justify;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    
+}
+.listastexto {     
+    text-decoration: underline;
+    color: #fff;
+    font-weight: bolder;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    line-height: 1.5;
+    font-size: 1.0em;
+}
+figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin: 0 auto;
+    width: 30%;
+    height: 30%;
+  
+}
+.imgtexto {
+    border: 5px dashed white;
+    width: 80%;
+}
+.imglogo {
+    position: absolute;
+    top: 10%;
+    left: 1%;
+    height: 80%;      
+}
+
+um:ligação { 
+color: #fff;
+background-color: transparent;
+text-decoration: none;
+}
+a:visited {
+color: #fff;
+background-color: transparent;
+text-decoration: none;
+}
+a:hover {
+color: #191970;
+background-color: transparent;
+text-decoration: underline;
+}
+a:active {
+color: #fff;
+background-color: transparent;
+text-decoration: underline;
+}
+table {
+    border-collapse: collapse;
+    width: 80%;
+    color: #fff;
+    font-size: 1.2em;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+td, th {
+    border: 5px dashed #fff;
+    padding: 3%;
+}
+
+tr:nth-child(even) {
+    background-color: hsla(199, 80%, 84%, 0.87);
+}
+.centro{
+    text-align: center;
+}
+.video{
+    text-align: center;
+}
+.fundo{
+   background: #b3d4eb; 
+   width: 80%;
+   margin-left: auto;
+   margin-right: auto;
+   padding: 3%;
+}
+.distancia{
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+input[type=text], select, textarea{
+    width: 80%;
+    padding: 12px 20px;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /*Auxilia no ajuste do responsivo do site*/
+}
+input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  fieldset{
+    width: 80%;
+    border: 2px solid black;
+    padding: 2%;
+  }
+
+  .item {
+    position: relative; /*Relativo a quem? Sempre ao pai*/
+    margin: 10px 0;
+  }
+
+  .item::before{  /*Essa propriedade aplica modificações a classe; nesse caso "antes"*/
+    content: ''; /*relativo ao ícone que vou utilizar*/
+    position: relative;
+    left: 0;
+    top: 0;
+    padding: 10px 15px;
+    background-image: url('../img/Ícone Lampada.png');
+    background-repeat: no-repeat;
+    margin-right: 6px;
+}
+
+  /*É importante ter uma lógica na ordem da aplicação da media query; do menor para o maior*/
+/*quando a tela for menor que 599px aplicar esse código*/
+@media screen and (min-width: 599px) {
+    .container{
+        margin-top: 65%;
+    }
+}
+/*quando a tela for maior que 600px aplicar esse código*/
+@media screen and (min-width: 600px) {
+    .container{
+        margin-top: 40%;
+    }
+}
+/*quando a tela for maior que 768px aplicar esse código (telas grandes - tipo PC; monitores maiores) */
+@media screen and (min-width: 768px) {
+    .container{
+        margin-top: 15%;}
+        header{
+            height: 100px;
+            flex-direction: row; /*significa em linha*/
+            position: relative;
+        }
+        .menu-opcoes{
+            position: absolute;
+            right: 5%;
+            top: 45%;
+        }
+        .menu-opcoes ul li{    /* lê-se "li" filho de "ul";  "ul" filho de menu-opcoes*/
+            display: inline;    /*o padrão HTML é em bloco, trocamos para em linha*/
+            margin-left: 10px;
+        }
+        .imglogo{
+          position: absolute;
+          top: 20px;
+          left: 5%;  
+        } 
+
+        #sobre, #galeria{
+           flex-direction: row; /*Em linha*/
+           flex-wrap: wrap; /*funciona para quebra de linha; vai para a linha a baixo*/
+        }
+        
+        #sobre h1, h3, p{
+            width: 100%;
+            text-align: center;
+        }
+
+        #sobre .sobre{
+            width: 25%;
+            text-align: center;
+        }
+
+        #galeria .galeria{
+            width: 50%;
+            text-align: center;
+        }
+
+}
+
+
