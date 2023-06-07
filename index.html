@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+    <title>Primeiro Site Html</title>
+</head>
+<body>
+    <header class="fixo">
+        <h1><img class="imglogo" src="img/logotipo.png"></h1>
+        <nav class="menu-opcoes">
+            <ul class="ajustes">
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#html">HTML</a></li>
+                <li><a href="#css">CSS</a></li>
+                <li><a href="javascript.html">JavaScript</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul> 
+        </nav>
+    </header>
+    <div class="container">
+         <h1 class="titulos">Sobre<a href="#sobre"></a></h1>
+        
+         <section id="sobre">
+            <div class="sobre">
+                <img class="imgsobre" src="img/Ícone PC.png">
+                <h3 class="titulos">Conheça sobre Tecnologia</h3>
+                <p>Aqui você irá melhorar seus conhecimentos</p>
+            </div>
+            <div class="sobre">
+                <img class="imgsobre" src="img/calculadora-de-calorias.png">
+                <h3 class="titulos">Site Responsivo</h3>
+                <p>Você aprenderá a fazer sites responsivos que se adaptam a diferentes telas</p>
+            </div>
+            <div class="sobre">
+                <img class="imgsobre" src="img/Celular.png">
+                <h3 class="titulos">Aproveite o Conhecimento</h3>
+                <p>Aqui você irá ter diferentes ideias para construir seu site</p>
+            </div>
+            <div class="sobre">
+                <img class="imgsobre" src="img/Lampada.png">
+                <h3 class="titulos">Luz paras seu caminho</h3>
+                <p>Lampadas para iluminar seu conhecimento</p>
+            </div>
+
+        </section>
+        
+        <div id="html">
+             <h1 class="titulos">Introdução ao HTML</h1>
+                 <p>Saiba mais sobre HTML<a class="teste" href="https://www.w3schools.com/html/default.asp" target="_blank">click aqui</a></p>
+                 <p>HTML é a linguagem de marcação padrão para criar páginas da Web.</p>
+             <h2 class="titulos">O que é <a href="#sobre">HTML?</a></h2>
+                     <ul class="listastexto">
+                         <li class="item">Maçãs</li>
+                         <li class="item">Bananas</li>
+                         <li class="item">Limões</li>
+                         <li class="item">Laranjas</li>
+                         <li class="item">Melancias</li>
+                         <li class="item">Jacas</li>
+                     </ul>
+             <h2 class="titulos" >Estrutura básica de um HTML</h2>
+                  <figure>    
+                      <a href="https://www.w3schools.com/html/html_intro.asp" target="_blank" >
+                          <img class="imgtexto" src="https://cdn.pixabay.com/photo/2016/11/18/15/58/vw-1835506_960_720.jpg"
+                      alt="imagem de carro"/>
+                  </figure>
+                  <figcaption>Fusca na floresta, muito bonito</figcaption>
+        </div>
+       
+        <div id="css">
+            <h1 class="titulos">Introdução ao CSS<a href="#css"></a></h1>
+                <p>Recomendamos a leitura deste tutorial, na sequência listada no menu.
+                Se você tiver uma tela grande, o menu sempre estará presente à esquerda.            
+                Se você tiver uma tela pequena, abra o menu clicando no sinal de menu superior
+                </p>
+            <h2 class="titulos">Tipos de CSS</h2>
+                <ul class="listastexto">
+                    <li>CSS é a linguagem que usamos para estilizar um documento HTML.</li>
+                    <li>CSS descreve como os elementos HTML devem ser exibidos.</li>
+                    <li>Este tutorial ensinará CSS do básico ao avançado.</li>
+                </ul>
+            <h2 class="titulos">Conheça um pouco sobre Javascript</h2>
+            <p  class="titulos"><a href="javascript.html">Clique aqui para conhecer JavaScript!</a></p>
+            <p  class="titulos"><a href="position.html">Clique aqui para ver os posicionamentos em css!</a></p>
+        </div>
+        <h1 class="titulos">Formulário de Contato</h1>
+            <p class="centro">Entre em contato para sanar suas dúvidas ou sugestões</p>
+            <div class="fundo">
+                <form >
+                    <div class="distancia">
+                        
+                        <input type="text" placeholder="Digite seu nome"> 
+                    </div>
+                    <div  class="distancia">
+                        
+                        <input type="text" placeholder="Digite o Assunto"> 
+                    </div>
+                    <div class="distancia">
+                        <fieldset>
+                            <legend>Sexo</legend>
+                        
+                                <input type="radio" id="male" name="gender" value="male">
+                                <label for="male">Feminino</label><br>
+                                <input type="radio" id="female" name="gender" value="female">
+                                <label for="female">Masculino</label><br>
+                        </fieldset>   
+                    </div>
+                    <div class="distancia">
+                        <fieldset>
+                            <legend>Gosto Musical</legend>
+                                <input type="checkbox" id="male" name="gender" value="male">
+                                <label for="male">Rock</label><br>
+                                <input type="checkbox" id="female" name="gender" value="female">
+                                <label for="female">MPB</label><br>   
+                                <input type="checkbox" id="female" name="gender" value="female">
+                                <label for="male">Sertanejo</label><br>
+                                <input type="checkbox" id="female" name="gender" value="female">
+                                <label for="male">Funk</label><br>
+                        </fieldset>
+                    </div>
+                    <div class="distancia">
+                        <label for="cars">Escolaridade:</label>
+                            <select id="cars" name="cars">
+                               <option value="volvo">Fundamental</option>
+                               <option value="saab">Ensino Médio</option>
+                               <option value="fiat">Superior</option>
+                               <option value="audi">Especialização</option>
+                            </select>
+
+                    </div>
+                    <div class="distancia">
+                        <label for="male">Sugestões ou Dúvidas: </label><br>
+                        <textarea name="message" style="width:80%; height:200px;">Digite seu texto.
+                        </textarea>
+                    </div>
+                    
+                    <div class="distancia">
+                        <input type="submit" value="Enviar">
+                    </div>
+                </form>
+                <div id="galeria">
+                    <div class="galeria">
+                        <figure>
+                            <img class="imggaleria" src="img/Galeria de fotos/Dog 1 redred.jpg">
+                            <p class="centro">Escreva alguma coisa</p>
+                        </figure>
+                    </div>
+                    <div class="galeria">
+                        <figure>
+                            <img class="imggaleria" src="img/Galeria de fotos/Dog 3 redred.jpg">
+                            <p class="centro">Escreva alguma coisa</p>
+                        </figure>
+                    </div>
+                    <div class="galeria">
+                        <figure>
+                            <img class="imggaleria" src="img/Galeria de fotos/Dog 2 redred.jpg">
+                            <p class="centro">Escreva alguma coisa</p>
+                        </figure>
+                    </div>
+                    <div class="galeria">
+                        <figure>
+                            <img class="imggaleria" src="img/Galeria de fotos/Robo red.jpg">
+                            <p class="centro">Escreva alguma coisa</p>
+                        </figure>
+                    </div>
+                    <div class="galeria">
+                        <figure>
+                            <img class="imggaleria" src="img/Galeria de fotos/Dog 1 redred.jpg">
+                            <p class="centro">Escreva alguma coisa</p>
+                        </figure>
+                    </div>
+                    <div class="galeria">
+                        <figure>
+                            <img class="imggaleria" src="img/Galeria de fotos/Dog 3 redred.jpg">
+                            <p class="centro">Escreva alguma coisa</p>
+                        </figure>
+                    </div>
+                    <div class="galeria">
+                        <figure>
+                            <img class="imggaleria" src="img/Galeria de fotos/Dog 2 redred.jpg">
+                            <p class="centro">Escreva alguma coisa</p>
+                        </figure>
+                    </div>
+                    <div class="galeria">
+                        <figure>
+                            <img class="imggaleria" src="img/Galeria de fotos/Robo red.jpg">
+                            <p class="centro">Escreva alguma coisa</p>
+                        </figure>
+                    </div>
+                </div>
+            </div>    
+    </div>
+        <footer>
+            <p class="centro">Rodapé</p>        
+        </footer>
+</body>
+</html>
